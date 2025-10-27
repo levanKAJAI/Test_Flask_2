@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}ჩვენს შესახებ{% endblock %}
+
+{% block content %}
+<h2>ჩვენს შესახებ</h2>
+<p>კომპანია: {{ info.name }}</p>
+<p>დაარსდა: {{ info.founded }} წელს</p>
+<p>მიზანი: {{ info.mission }}</p>
+{% endblock %}

@@ -1,0 +1,149 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.car-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    width: 220px;
+}
+
+.contact-card{
+    list-style-type: none;
+    background: white;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+}
+
+.premium {
+    color: red;
+    font-weight: bold;
+}
+
+.standard {
+    color: green;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*სხვადასხვა ზომის ეკრანზე*/
+
+@media (max-width: 1024px) {
+    .card {
+        width: 70%;
+    }
+
+    .background-img {
+        height: 400px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .background-img {
+        height: 350px;
+        background-position: center;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .background-img {
+        height: 250px;
+    }
+
+    header {
+        font-size: 18px;
+    }
+
+    a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+

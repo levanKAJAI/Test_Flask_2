@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}მთავარი{% endblock %}
+
+{% block content %}
+<h2>ჩვენი ავტომობილები</h2>
+
+<div class="car-list">
+    {% for car in cars %}
+    <div class="car-card">
+        <h3>{{ car.brand }} {{ car.model }}</h3>
+        <p>ფასი: {{ car.price }} $</p>
+
+        {% if car.price > 20000 %}
+            <p class="premium"> პრემიუმ კლასი</p>
+        {% else %}
+            <p class="standard">სტანდარტული მოდელი</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
