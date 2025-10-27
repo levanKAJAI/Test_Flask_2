@@ -1,5 +1,5 @@
 # Test_Flask_2
-Test_Flask_1  (17 davaleba)
+Test_Flask_2  (17 davaleba)
 
 — დავალება —
 შექმენით მსგავსი სტრუქტურა:
